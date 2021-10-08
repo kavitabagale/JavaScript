@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimensional Array</title>
+    <script>
+        //https://www.youtube.com/watch?v=9wKRqGk55qg&list=PL0b6OzIxLPbx-BZTaWu_AF7hsKo_Fvsnf&index=35
+        // Multidimensional Array means when we are using one array multiple arrays at a time
+        var ary=[
+            ['kavita',30,'MCM','Pune'],
+            ['Prakash',30,'Diploma','Pune'],
+            ['Ashok',30,'ITI','Pune'],
+        ]
+        //document.write(ary);
+        document.write(ary[0][2] , "<br>");
+
+        for (var i=0; i<ary.length;i++)
+        {
+            for(var b=0; b<ary.length; b++)
+            {
+            document.write( ary[i][b], " ");
+        }
+        document.write("<br>");
+        }
+     
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects Tutorial</title>
+    <script>
+        //https://www.youtube.com/watch?v=JYKATlAS3ZU&list=PL0b6OzIxLPbx-BZTaWu_AF7hsKo_Fvsnf&index=50
+        //within Object we can create Array,Functions, and Objects
+
+        var a={
+            fname:'kavita',
+            lname:'bagale',
+            age:30,
+            edu:'MCM',
+
+            favmovies:['Dhoom','Hum','Chandi'], // Array
+
+            //salary is an function
+            salary:function(){
+                return 25000;
+            },
+
+            fullname:function(){
+                return this.fname + " " + this.lname;
+            },
+
+           //livingCity is an object
+            livingCity:{
+                city:'pune',
+                country:'maharashtra'
+            }
+
+        }
+        document.write(a.fname , "<br>"); //object
+        document.write(a.favmovies,  "<br>"); //fetching array value
+
+        document.write(a.salary(),"<br>");// salary is an function
+        document.write(a.fullname() ,  "<br>"); //fullname is object whicg fetching value using (.this) keyword
+        document.write(a.livingCity.country);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

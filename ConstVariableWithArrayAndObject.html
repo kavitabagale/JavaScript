@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Const Variable with Array & Objects</title>
+
+<script>
+    //https://www.youtube.com/watch?v=L8E7izVDK7s&list=PL0b6OzIxLPbx-BZTaWu_AF7hsKo_Fvsnf&index=53
+    //const variables :we can not reassign the value
+    //but using array we can reasign one by one the value of const variables
+
+const b=[10,30,60];     
+b[1]=10000;
+document.write(b[1], "<br>");
+
+
+    const a={
+        fname:'kavita',
+        age:30,
+        edu:'mcm'
+    };
+
+    document.write(a.fname , "<br>");//main value
+
+//we change const value using object
+    a.fname='Om'
+    document.write(a.fname);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
